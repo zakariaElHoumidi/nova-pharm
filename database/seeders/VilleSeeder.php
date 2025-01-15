@@ -1,0 +1,91 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class VilleSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $data = [
+            ['id' => 12, 'name' => 'TANGER', 'region_id' => 1],
+            ['id' => 13, 'name' => 'AL HOCEIMA', 'region_id' => 1],
+            ['id' => 14, 'name' => 'ASSILAH', 'region_id' => 1],
+            ['id' => 15, 'name' => 'CHEFCHAOUEN', 'region_id' => 1],
+            ['id' => 16, 'name' => 'FNIDEQ', 'region_id' => 1],
+            ['id' => 17, 'name' => 'KSAR EL KEBIR', 'region_id' => 1],
+            ['id' => 18, 'name' => 'LARACHE', 'region_id' => 1],
+            ['id' => 19, 'name' => 'MARTIL', 'region_id' => 1],
+            ['id' => 20, 'name' => 'M\'DIQ', 'region_id' => 1],
+            ['id' => 21, 'name' => 'MECHRA BEL KSIRI', 'region_id' => 1],
+            ['id' => 22, 'name' => 'OUEZZANE', 'region_id' => 1],
+            ['id' => 23, 'name' => 'SOUK EL ARBAA DU RHARB', 'region_id' => 1],
+            ['id' => 24, 'name' => 'TETOUAN', 'region_id' => 1],
+            ['id' => 25, 'name' => 'OUJDA', 'region_id' => 2],
+            ['id' => 26, 'name' => 'NADOR', 'region_id' => 2],
+            ['id' => 27, 'name' => 'DRIOUCH', 'region_id' => 2],
+            ['id' => 28, 'name' => 'BERKANE', 'region_id' => 2],
+            ['id' => 29, 'name' => 'TAOURIRT', 'region_id' => 2],
+            ['id' => 30, 'name' => 'GUERCIF', 'region_id' => 2],
+            ['id' => 31, 'name' => 'ZAIO', 'region_id' => 2],
+            ['id' => 32, 'name' => 'AHFIR', 'region_id' => 2],
+            ['id' => 33, 'name' => 'BOUARFA', 'region_id' => 2],
+            ['id' => 34, 'name' => 'FIGUIG', 'region_id' => 2],
+            ['id' => 35, 'name' => 'FES', 'region_id' => 3],
+            ['id' => 36, 'name' => 'MEKNES', 'region_id' => 3],
+            ['id' => 37, 'name' => 'TAZA', 'region_id' => 3],
+            ['id' => 38, 'name' => 'EL HAJEB', 'region_id' => 3],
+            ['id' => 39, 'name' => 'IFRANE', 'region_id' => 3],
+            ['id' => 40, 'name' => 'MLY YAACOUB', 'region_id' => 3],
+            ['id' => 41, 'name' => 'SEFROU', 'region_id' => 3],
+            ['id' => 42, 'name' => 'BOULEMANE', 'region_id' => 3],
+            ['id' => 43, 'name' => 'AZROU', 'region_id' => 3],
+            ['id' => 44, 'name' => 'IMOUZZER KANDAR', 'region_id' => 3],
+            ['id' => 45, 'name' => 'KHENIFRA', 'region_id' => 3],
+            ['id' => 46, 'name' => 'MIDELT', 'region_id' => 3],
+            ['id' => 47, 'name' => 'MISSOUR', 'region_id' => 3],
+            ['id' => 49, 'name' => 'AKLIM', 'region_id' => 3],
+            ['id' => 52, 'name' => 'MOULAY IDRISS', 'region_id' => 3],
+            ['id' => 53, 'name' => 'AKLIM', 'region_id' => 3],
+            ['id' => 54, 'name' => 'TAOUNATE', 'region_id' => 3],
+            ['id' => 56, 'name' => 'BENI MELLAL', 'region_id' => 4],
+            ['id' => 57, 'name' => 'KHOURIBGA', 'region_id' => 4],
+            ['id' => 58, 'name' => 'AZILAL', 'region_id' => 4],
+            ['id' => 59, 'name' => 'FKIH BEN SALAH', 'region_id' => 4],
+            ['id' => 60, 'name' => 'BEN AHMED', 'region_id' => 4],
+            ['id' => 61, 'name' => 'SOUK SEBT', 'region_id' => 4],
+            ['id' => 62, 'name' => 'KASBA TADLA', 'region_id' => 4],
+            ['id' => 63, 'name' => 'OUED ZEM', 'region_id' => 4],
+            ['id' => 64, 'name' => 'AFOURER', 'region_id' => 4],
+            ['id' => 65, 'name' => 'BEJAAD', 'region_id' => 4],
+            ['id' => 66, 'name' => 'KASBA TADLA', 'region_id' => 4],
+            ['id' => 67, 'name' => 'ZAOUIA ECH CHEIKH', 'region_id' => 4],
+            ['id' => 68, 'name' => 'RABAT', 'region_id' => 5],
+            ['id' => 69, 'name' => 'SALÉ', 'region_id' => 5],
+            ['id' => 70, 'name' => 'SKHIRATE', 'region_id' => 5],
+            ['id' => 71, 'name' => 'KÉNITRA', 'region_id' => 5],
+            ['id' => 72, 'name' => 'KHÉMISSET', 'region_id' => 5],
+            ['id' => 73, 'name' => 'SIDI KACEM', 'region_id' => 5],
+            ['id' => 74, 'name' => 'SIDI SLIMANE', 'region_id' => 5],
+            ['id' => 75, 'name' => 'BOUKNADEL', 'region_id' => 5],
+            ['id' => 76, 'name' => 'SIDI YAHYA DU GHARB', 'region_id' => 5],
+            ['id' => 77, 'name' => 'TAOUNATE', 'region_id' => 5],
+            ['id' => 78, 'name' => 'TIFLET', 'region_id' => 5],
+            ['id' => 79, 'name' => 'BOUZNIKA', 'region_id' => 5],
+            ['id' => 80, 'name' => 'ROMMANI', 'region_id' => 5],
+            ['id' => 81, 'name' => 'TÉMARA', 'region_id' => 5],
+            ['id' => 82, 'name' => 'MOHAMMEDIA', 'region_id' => 6],
+            ['id' => 83, 'name' => 'EL JADIDA', 'region_id' => 6],
+            ['id' => 84, 'name' => 'NOUACEUR', 'region_id' => 6],
+            ['id' => 85, 'name' => 'MEDIOUNA', 'region_id' => 6],
+            ['id' => 86, 'name' => 'BENSLIMANE', 'region_id' => 6],
+            ['id' => 87, 'name' => 'SETTAT', 'region_id' => 6],
+            ['id' => 88, 'name' => 'BERRECHID', 'region_id' => 6],
+            ['id' => 89, 'name' => 'SIDI BENNOUR', 'region_id' => 6],
+        ];
+
+        DB::table('villes')->insert($data);
+    }
+}
