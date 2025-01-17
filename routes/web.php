@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use App\Models\Visite;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/visites', function () {
+    $visites = Visite::with(['user', 'medecin'])->get();
+
+    return response($visites);
+})
+    ->name('filter');

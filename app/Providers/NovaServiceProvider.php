@@ -103,7 +103,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools(): array
     {
         return [
-            new Agenda
+            new Agenda,
         ];
     }
 

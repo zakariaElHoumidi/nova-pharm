@@ -10,5 +10,11 @@
   },
   "devDependencies": {
     "laravel-nova-devtool": "file:vendor/laravel/nova-devtool"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/vue3": "^6.1.15"
   }
 }
